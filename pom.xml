@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.rothsmith</groupId>
+		<artifactId>rothsmith-common</artifactId>
+		<version>1.2.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>genericdao-dbutils</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>Generic DAO using DbUtils </name>
+
+	<properties>
+		<checkstyle.config>${basedir}/checkstyle_checks.xml</checkstyle.config>
+		<pmd.rulesfile>${basedir}/pmdrules.xml</pmd.rulesfile>		
+	</properties>
+
+	<inceptionYear>2014</inceptionYear>
+	<scm>
+		<connection>scm:git:git@github.com:drothauser/generic-dbutils.git</connection>
+		<developerConnection>scm:git:git@github.com:drothauser/generic-dbutils.git</developerConnection>
+		<url>https://github.com/drothauser/generic-dbutils.git</url>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://ec2-54-69-215-107.us-west-2.compute.amazonaws.com:8080/view/All/job/generic-dbutils/</url>
+	</ciManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.rothsmith</groupId>
+			<artifactId>genericdao-api</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.rothsmith</groupId>
+			<artifactId>rothsmith-database</artifactId>
+			<version>1.2.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>simple-jndi</groupId>
+			<artifactId>simple-jndi</artifactId>
+			<version>0.11.4.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derby</artifactId>
+			<version>10.11.1.1</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+</project>
