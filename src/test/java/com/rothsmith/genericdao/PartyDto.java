@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2015 FCCI Insurance Group, All rights reserved.
+ * Copyright (c) 2015 Rothsmith, LLC, All rights reserved.
  */
 package com.rothsmith.genericdao;
 
