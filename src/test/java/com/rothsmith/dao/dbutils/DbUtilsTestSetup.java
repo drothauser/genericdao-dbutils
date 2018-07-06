@@ -126,8 +126,9 @@ public final class DbUtilsTestSetup {
 		for (String sqlFileName : StringUtils
 		    .split(StringUtils.deleteWhitespace(sqlFileNames), ',')) {
 
-			URL sqlFileURL = Thread.currentThread().getContextClassLoader()
-			    .getResource(sqlFileName);
+			// URL sqlFileURL = Thread.currentThread().getContextClassLoader()
+			// .getResource(sqlFileName);
+			URL sqlFileURL = ClassLoader.getSystemResource(sqlFileName);
 			if (sqlFileURL == null) {
 				throw new IOException("Couldn't find: " + sqlFileName);
 			}
