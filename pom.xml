@@ -1,18 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.rothsmith</groupId>
-		<artifactId>rothsmith-common</artifactId>
-		<version>1.2.0-SNAPSHOT</version>
+		<groupId>net.rothsmith</groupId>
+		<artifactId>rothsmith-parent</artifactId>
+		<version>1.0.0</version>
 	</parent>
 	<artifactId>genericdao-dbutils</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>${revision}${changelist}</version>
 
 	<name>Generic DAO using DbUtils </name>
 
 	<properties>
+		<revision>1.0.0</revision>
+		<changelist>-SNAPSHOT</changelist>
 		<checkstyle.config>${basedir}/checkstyle_checks.xml</checkstyle.config>
-		<pmd.rulesfile>${basedir}/pmdrules.xml</pmd.rulesfile>		
+		<pmd.rulesfile>${basedir}/pmdrules.xml</pmd.rulesfile>
 	</properties>
 
 	<inceptionYear>2014</inceptionYear>
@@ -22,7 +26,7 @@
 		<url>https://github.com/drothauser/generic-dbutils.git</url>
 		<tag>HEAD</tag>
 	</scm>
-	
+
 	<ciManagement>
 		<system>Jenkins</system>
 		<url>http://ec2-54-69-215-107.us-west-2.compute.amazonaws.com:8080/view/All/job/generic-dbutils/</url>
@@ -31,15 +35,15 @@
 	<dependencies>
 
 		<dependency>
-			<groupId>com.rothsmith</groupId>
+			<groupId>net.rothsmith</groupId>
 			<artifactId>genericdao-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>[1.0.0,)</version>
 		</dependency>
 
 		<dependency>
-			<groupId>com.rothsmith</groupId>
+			<groupId>net.rothsmith</groupId>
 			<artifactId>rothsmith-database</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>[1.0.0,)</version>
 		</dependency>
 
 		<dependency>
