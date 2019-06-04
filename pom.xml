@@ -21,9 +21,9 @@
 
 	<inceptionYear>2014</inceptionYear>
 	<scm>
-		<connection>scm:git:git@github.com:drothauser/generic-dbutils.git</connection>
-		<developerConnection>scm:git:git@github.com:drothauser/generic-dbutils.git</developerConnection>
-		<url>https://github.com/drothauser/generic-dbutils.git</url>
+		<connection>scm:git:git@github.com:drothauser/genericdao-dbutils.git</connection>
+		<developerConnection>scm:git:git@github.com:drothauser/genericdao-dbutils.git</developerConnection>
+		<url>https://github.com/drothauser/genericdao-dbutils.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
