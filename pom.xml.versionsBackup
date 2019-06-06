@@ -37,13 +37,13 @@
 		<dependency>
 			<groupId>net.rothsmith</groupId>
 			<artifactId>genericdao-api</artifactId>
-			<version>[1.0.0-SNAPSHOT,)</version>
+			<version>[1.0.0,)</version>
 		</dependency>
 
 		<dependency>
 			<groupId>net.rothsmith</groupId>
 			<artifactId>rothsmith-database</artifactId>
-			<version>[1.0.0-SNAPSHOT,)</version>
+			<version>[1.0.0,)</version>
 		</dependency>
 
 		<dependency>
