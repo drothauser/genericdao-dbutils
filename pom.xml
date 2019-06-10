@@ -14,7 +14,8 @@
 
 	<properties>
 		<revision>1.0.0</revision>
-		<changelist>-SNAPSHOT</changelist>
+		<rothsmith-dependency-version-dev>(,${revision}-SNAPSHOT]</rothsmith-dependency-version-dev>
+		<rothsmith-dependency-version-release>(,${revision}-][${revision}-,)</rothsmith-dependency-version-release>
 		<checkstyle.config>${basedir}/checkstyle_checks.xml</checkstyle.config>
 		<pmd.rulesfile>${basedir}/pmdrules.xml</pmd.rulesfile>
 	</properties>
