@@ -22,6 +22,8 @@
     <url>http://ec2-54-69-215-107.us-west-2.compute.amazonaws.com:8080/view/All/job/generic-dbutils/</url>
   </ciManagement>
   <properties>
+    <rothsmith-dependency-version-dev>(,1.0.0-SNAPSHOT]</rothsmith-dependency-version-dev>
+    <rothsmith-dependency-version-release>(,1.0.0-][1.0.0-,)</rothsmith-dependency-version-release>
     <revision>1.0.0</revision>
     <checkstyle.config>${basedir}/checkstyle_checks.xml</checkstyle.config>
     <pmd.rulesfile>${basedir}/pmdrules.xml</pmd.rulesfile>
@@ -30,10 +32,12 @@
     <dependency>
       <groupId>net.rothsmith</groupId>
       <artifactId>genericdao-api</artifactId>
+      <version>${rothsmith-dependency-version}</version>
     </dependency>
     <dependency>
       <groupId>net.rothsmith</groupId>
       <artifactId>rothsmith-database</artifactId>
+      <version>${rothsmith-dependency-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
