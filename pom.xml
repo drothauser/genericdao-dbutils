@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>net.rothsmith</groupId>
 		<artifactId>rothsmith-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1</version>
 	</parent>
 	<artifactId>genericdao-dbutils</artifactId>
 	<version>${revision}${changelist}</version>
