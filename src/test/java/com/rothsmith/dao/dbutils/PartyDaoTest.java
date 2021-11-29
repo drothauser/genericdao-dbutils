@@ -21,9 +21,10 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.rothsmith.dao.DaoRuntimeException;
 import com.rothsmith.dao.dbutils.DbUtilsJdbcDao;
 import com.rothsmith.genericdao.PartyDto;
+
+import net.rothsmith.dao.DaoRuntimeException;
 
 /**
  * Tests for PartyDao.

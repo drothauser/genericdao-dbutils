@@ -29,9 +29,10 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.rothsmith.dao.DaoRuntimeException;
-import com.rothsmith.dao.JdbcDao;
 import com.rothsmith.utils.database.JDBCServiceLocator;
+
+import net.rothsmith.dao.DaoRuntimeException;
+import net.rothsmith.dao.JdbcDao;
 
 /**
  * A generic <a href="http://commons.apache.org/proper/commons-dbutils/">Apache
